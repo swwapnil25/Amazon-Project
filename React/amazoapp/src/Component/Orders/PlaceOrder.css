@@ -1,0 +1,64 @@
+/* PlaceOrder.module.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container11 {
+  max-width: 800px;
+  margin: 26px auto;
+  padding: 42px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container11 h1 {
+  text-align: center;
+}
+
+.container11 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container11 label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.container11 input,
+.container11 textarea,
+.container11 select {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.container11 button {
+  padding: 14px;
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bolder;
+  /* background-color: #FF9F00; */
+  border: 2px solid #ff9f00;
+  margin-right: 8px;
+}
+
+.container11 button:hover {
+  background-color: #fff;
+  color: #ff9f00;
+}
+
+.container11 button:focus {
+  outline: none;
+}

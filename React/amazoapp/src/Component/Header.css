@@ -1,0 +1,430 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Mulish', sans-serif;
+  box-sizing: border-box;
+  /* color: var(--fifth-color); */
+  }
+  :root{
+  /* Dark-Mode */
+  /*  --primary-color:#171719;
+  --secondary-color: #0b0b0c;
+  --third-color: #151414;
+  --fourth-color: #1d1e20;
+  --fifth-color: whitesmoke;
+  --sixth-color: #080808;   */
+  /* Light-Mode */
+  --primary-color:#0d0d28;
+  --secondary-color: #272745;
+  --third-color: #e0d7d7;
+  --fourth-color: #edf2fc;
+  --fifth-color: black;
+  --sixth-color: rgb(19, 19, 49);
+  --seventh-color:#ece4e4 ;
+  --eight-color: whitesmoke;
+  }
+  .dark-theme{
+  --primary-color:#171719;
+  --secondary-color: #0b0b0c;
+  --third-color: #151414;
+  --fourth-color: #1d1e20;
+  --fifth-color: whitesmoke;
+  --sixth-color: #080808;
+  --seventh-color:#1d1e20;
+  --eight-color: #1d1e20;
+  }
+  body{
+  background-color: var(--third-color);
+  }
+  /* Navbar */
+  .font h1{
+  margin-top: 14px;
+  font-size: 23px;
+  color: var(--fifth-color);
+  }
+  .fnav{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  padding: 7px;
+  }
+  /***search-container****/
+  .search-container {
+  background-color: red;
+  margin-left: 3px;
+  margin-right: -8px;
+  width: 544px;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 3px;
+  overflow: hidden;
+  }
+  .search-container:hover {
+  outline: 3px solid orange;
+  }
+  .search-select {
+  width: 60px;
+  border: none;
+  background-color: rgb(230, 227, 227);
+  }
+  .search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 3px;
+  font-size: 1.1rem;
+  }
+  .search-icon {
+  width: 50px;
+  background-color: rgb(235, 160, 94);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #000;
+  }
+  .fnav img{
+  width: 12%;
+  height: 11%;
+  margin-top: 8px;
+  }
+  .nav input{
+  width: 457px;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  }
+  .nav img{
+  width: 4%;
+  height: 74%;
+  }
+  .main{
+  overflow: hidden;
+  }
+  .nav{
+  display: flex;
+  justify-content: space-around;
+  }
+  nav .loca{
+  display: flex;
+  margin-left: 0px;
+  }
+  nav i{
+  font-size: 27px;
+  }
+  nav p{
+  margin-top: 11px;
+  font-size: 15px;
+  margin-left: 23px;
+  overflow: hidden;
+  }
+  .loca i{
+  margin-inline: 0px;
+  margin-right: -20px;
+  font-size: 22px;
+  padding: 7px;
+  }
+  .snav{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: var(--secondary-color);  /* graycolor for nav */
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  /*  margin-top: 2px; */
+  }
+  .snav p{
+  margin-top: 2px;
+  }
+  .snav p:hover{
+  border-bottom: 2px solid whitesmoke;
+  border-top: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+  border-left: 2px solid whitesmoke;
+  }
+  .fa-sharp{
+  font-size: 21px;
+  padding: 9px;
+  }
+  /* Weather */
+  #weather-icon img{
+  float: right;
+  margin-top: -50%;
+  margin-right: -45%;
+  /* margin-right: 45px; */
+  width: 50px;
+  }
+  #weather-box {
+  float: right;
+  margin-right: 28px;
+  margin-top: -11px;
+  color: white;
+  font-size: 1rem;
+  }
+  /* Container Middel */
+  .main img{
+  width: 162%;
+  margin-left: -324px;
+  overflow: hidden;
+  }
+  .container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  position: relative;
+  top: -460px;
+  }
+  .container2{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: -400px;
+  }
+  .card{
+  width: 380px;
+  height: 440px;
+  background-color: var(--fourth-color); /* white*/
+  text-align: center;
+  padding: 11px;
+  }
+  .card2{
+  width: 382px;
+  height: 365px;
+  background-color: var(--fourth-color); /* white*/
+  text-align: center;
+  padding: 11px;
+  }
+  .img img{
+  width: 44%;
+  padding: 7px;
+  margin-top: 7px;
+  }
+  .deals{
+  margin-top: 33px;
+  width: 1130px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: var(--fourth-color);
+  margin-left: 85px;
+  cursor: pointer;
+  }
+  .deals h1{
+  margin-left: 22px;
+  margin-top: 33px;
+  padding: 22px;
+  color: var(--fifth-color);
+  }
+  .deals .img{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 30px;
+  }
+  .deals .img img{
+  width: 12%;
+  }
+  .top a{
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 26px;
+  }
+  .top img{
+  width: 20%;
+  margin-inline: 22px;
+  }
+  .footer{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  color: white;
+  background-color: var(--sixth-color);
+  padding: 44px;
+  }
+  .list{
+  cursor: pointer;
+  }
+  #icon{
+  width: 28px;
+  cursor: pointer;
+  }
+  h4{
+  margin-top: 4px;
+  }
+  /* Coupon */
+  #coupon{
+  height:325px;
+  width:650px;
+  z-index:100;
+  position: absolute;
+  margin-top: -250%;
+  margin-left: 26%;
+  visibility: hidden;
+  }
+  #coupon img{
+  width:100%;
+  height:100%;
+  position: relative;
+  }
+  #coupon button{
+  position: absolute;
+  margin-left: -100%;
+  height: 25px;
+  width: 30px;
+  border: black;
+  font-size: 22px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  }
+  /* Main Section */
+  .today_deals_container{
+  margin: 30px;
+  padding-bottom: 30px;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1),
+  2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--seventh-color);
+  color: var(--fifth-color);
+  }
+  .today_deals_container1{
+  margin: 30px;
+  padding-bottom: 30px;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1),
+  2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: whitesmoke;
+  background-color: var(--eight-color) ;
+  color: var(--fifth-color);
+  }
+  .today_deals_heading{
+  display: flex;
+  align-items: center;
+  padding: 2px 20px;
+  }
+  .today_deals_heading p a{
+  color:rgb(39, 114, 107);
+  text-decoration: none;
+  padding-left: 20px;
+  }
+  .today_deals_heading p a:hover{
+  text-decoration: underline;
+  }
+  .today_deals_product_container{
+  /* background-color: red; */
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  }
+  .today_deals_product_list{
+  display: flex;
+  overflow: hidden;
+  }
+  .today_deals_product_item{
+  min-width: 222px;
+  height: 240px;
+  padding: 0px 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  transform: translateX(0%);
+  transition: transform 1s;
+  }
+  .todayDeals_product_image{
+  height: 200px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 15px;
+  }
+  .today_deals_product_item img{
+  width: fit-content;
+  height: 70%;
+  /* padding: 20px 20px; */
+  background-color: red;
+  /*     cursor: pointer; */
+  }
+  .today_deals_product_item p{
+  justify-self: flex-end;
+  margin-top: 14px;
+  text-align: center;
+  }
+  .discount_Contaienr{
+  /* border: 2px solid red; */
+  margin-top: 0px;
+  }
+  .discount_Contaienr a{
+  padding: 5px 10px;
+  font-size: 12px;
+  color:rgb(211, 30, 84);
+  text-decoration: none;
+  }
+  .discount_Contaienr a:first-child{
+  background-color: rgb(211, 30, 84);
+  padding: 5px 10px;
+  color:white;
+  font-weight: 550;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 12px;
+  }
+  .today_deals_btn_container{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  z-index: 10;
+  }
+  .today_deal_btn{
+  padding: 40px 20px;
+  font-size: 40px;
+  margin-top: -74px;
+  margin-left: 5px;
+  margin-right: 32px;
+  border: none;
+  outline: none;
+  background-color: rgb(255,255,255,0.4);
+  }
+
+  
+  /* Responsive */
+  /* @media only screen and (max-width: 1128px) {
+  .container {
+  top: -401px
+  }
+  .container2{
+  margin-top: -358px
+  }
+  .today_deals_product_item{
+  min-width: 191px;}
+  }
+  @media (max-width: 1065px){
+  .fnav{
+  display: inline-flex;
+  }
+  {
+  .footer{
+  margin-right: -33px;
+  }
+  .top{
+  margin-right: -33px;
+  }
+  .today_deals_product_item{
+  padding: 0px 5px;
+  }
+  } */
