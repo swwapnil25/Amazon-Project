@@ -1,0 +1,58 @@
+[
+    {
+        "productType_id": 1,
+        "producttType": "Items You May Like",
+        "product_name": "Quantum",
+        "content": "Fire-Boltt Quantum Luxury Stainle..",
+        "price": 2999,
+        "Off": "Up to 60% off",
+        "Deal": "Deal of the day",
+        "Brand": "Fire-Boltt",
+        "image": "https://i.ibb.co/dDmvGZD/71-Npf-TAn0f-L-AC-UL400.jpg"
+    },
+    {
+        "productType_id": 2,
+        "producttType": "Items You May Like",
+        "product_name": "EYEBOGLER",
+        "content": "EYEBOGLER Regular Printed T-Shirt",
+        "price": 13590,
+        "Off": "Up to 25% off",
+        "Deal": "Deal of the day",
+        "Brand": "EYEBOGLER",
+        "image": "https://i.ibb.co/kJQyFsD/61-Gm-Ej-XOdz-L-AC-UL400.jpg"
+    },
+    {
+        "productType_id": 3,
+        "producttType": "Items You May Like",
+        "product_name": "HP",
+        "content": "HP Laptop 15s, Intel Celeron..",
+        "price": 33094,
+        "Off": "Up to 25% off",
+        "Deal": "Deal of the day",
+        "Brand": "HP",
+        "image": "https://i.ibb.co/CBP44g8/71-RLItr7-I8-L-AC-UY218.jpg"
+    },
+    {
+        "productType_id": 4,
+        "producttType": "Items You May Like",
+        "product_name": "Caprese CHA",
+        "content": "womens CHA ROSE GOLD Tote..",
+        "price": 1024,
+        "Off": "Up to 60% off",
+        "Deal": "Deal of the day",
+        "Brand": "Caprese",
+        "image": "https://i.ibb.co/hRrXzC6/811-G4-Ue-WEs-L-AC-UL400.jpg"
+    },
+    {
+        "productType_id": 5,
+        "producttType": "Items You May Like",
+        "product_name": "Nirvana ION",
+        "content": "boAt Nirvana Ion with 120 HRS..",
+        "price": 2298,
+        "Off": "Up to 40% off",
+        "Deal": "Deal of the day",
+        "Brand": "BoAt",
+        "image": "https://i.ibb.co/q0FX9k7/51z-VOj-YRNu-L-AC-UL400.jpg"
+    }
+    
+]

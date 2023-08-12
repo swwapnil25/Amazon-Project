@@ -56,7 +56,8 @@ export const Header = () => {
                                 <option>All</option>
                             </select>
                             <input type="text" className="search-input" placeholder="Search Amazon.in"  />
-                            {/* value={input} onChange={(e) => handlechange(e.target.value)} */}
+                            {/* value={input} onChange={(e) => handlechange(e.target.value)}  */}
+                            
 
                             <div className="search-icon">
                                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -100,6 +101,9 @@ export const Header = () => {
                 </div>
                 <img src="https://i.ibb.co/D9kVQzw/moon.png" id="icon" />
             </nav>
+
+
+            
 
 
         </>

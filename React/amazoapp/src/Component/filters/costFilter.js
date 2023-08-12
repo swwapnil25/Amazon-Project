@@ -69,7 +69,7 @@ const CostFilter = (props) => {
             <div style={{marginTop: "10px", marginLeft: "22px"}} onChange={handleFilter}>
                 <input type="radio" name="cuisine" value="" />All
                 <div>
-                    <input type="radio" name="cuisine" value="1" />0-300
+                    <input type="radio" name="cuisine" value="0-300" />0-300
                 </div>
                 <div>
                     <input type="radio" name="cuisine" value="301-600" />301-600

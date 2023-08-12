@@ -1,4 +1,33 @@
+:root{
+    /* Dark-Mode */
+    /*  --primary-color:#171719;
+    --secondary-color: #0b0b0c;
+    --third-color: #151414;
+    --fourth-color: #1d1e20;
+    --fifth-color: whitesmoke;
+    --sixth-color: #080808;   */
+    /* Light-Mode */
+    --primary-color:#0d0d28;
+    --secondary-color: #272745;
+    --third-color: #e0d7d7;
+    --fourth-color: #edf2fc;
+    --fifth-color: black;
+    --sixth-color: rgb(19, 19, 49);
+    --seventh-color:#ece4e4 ;
+    --eight-color: whitesmoke;
+    }
+    .dark-theme{
+    --primary-color:#171719;
+    --secondary-color: #0b0b0c;
+    --third-color: #151414;
+    --fourth-color: #1d1e20;
+    --fifth-color: whitesmoke;
+    --sixth-color: #080808;
+    --seventh-color:#1d1e20;
+    --eight-color: #1d1e20;
+    }
 
+    
     .productBackgraound{
         background-color: rgba(213, 247, 247,0.4);
     }
@@ -9,7 +38,7 @@
     
     }
     .card-product{
-        background-color: #edf2fc;
+        background-color: var(--fourth-color);
         display: flex;
         flex-direction: column;
         justify-content: space-between;

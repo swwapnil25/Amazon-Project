@@ -9,6 +9,7 @@ import CostFilter from '../filters/costFilter';
 import Header from '../Header';
 
 
+
 const base_url = "https://amazonapi-r8s2.onrender.com";
 
 
@@ -41,7 +42,8 @@ const Listing = () => {
         <>
            <Header/>
             <div>
-                <div class="small">
+            {/* <div className="container" style={{ marginTop: "460px", marginLeft: "-7px" }}> */}
+                <div class="small" >
                     <div class="filter-options">
                         <div style={{marginLeft: "113px", fontSize: "23px",marginTop: "-20px"}}class="filter-heading" >Filters</div>
 

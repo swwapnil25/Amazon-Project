@@ -1,0 +1,62 @@
+[
+    {
+        "id": 6,
+        "productType_id": 6,
+        "producttType": "Attractive Deals",
+        "product_name": "Galaxy M34 5G",
+        "content": "Samsung Galaxy M34 5G..",
+        "price": 18999,
+        "Off": "Up to 20% off",
+        "Deal": "Deal of the day",
+        "Brand": "Samsung",
+        "image": "https://i.ibb.co/QXvb0M9/91fonh-Ato-AL-AC-UY218.jpg"
+    },
+    {
+        "id": 7,
+        "productType_id": 7,
+        "producttType": "Attractive Deals",
+        "product_name": "Camon 20 Pro 5G",
+        "content": "Tecno Camon 20 Pro 5G..",
+        "price": 13590,
+        "Off": "Up to 30% off",
+        "Deal": "Deal of the day",
+        "Brand": "Tecno",
+        "image": "https://i.ibb.co/LxrsvL7/71b-Y1-Sa-ML-AC-UY218.jpg"
+    },
+    {
+        "id": 8,
+        "productType_id": 8,
+        "producttType": "Attractive Deals",
+        "product_name": "Realme",
+        "content": "realme C11 2021..",
+        "price": 7490,
+        "Off": "Up to 25% off",
+        "Deal": "Deal of the day",
+        "Brand": "Realme",
+        "image": "https://i.ibb.co/dcRmhTd/8f3c87d739b0.jpg"
+    },
+    {
+        "id": 9,
+        "productType_id": 9,
+        "producttType": "Attractive Deals",
+        "product_name": "POCO F1",
+        "content": "Poco F1 by Xiaomi..",
+        "price": 11399,
+        "Off": "Up to 40% off",
+        "Deal": "Deal of the day",
+        "Brand": "Poco by Xiaomi",
+        "image": "https://i.ibb.co/NLXWG0H/812-MBICsvn-L-AC-UY218.jpg"
+    },
+    {
+        "id": 10,
+        "productType_id": 10,
+        "producttType": "Attractive Deals",
+        "product_name": "Itel S23",
+        "content": "Itel S23 (8GB RAM + 128GB ROM..",
+        "price": 8999,
+        "Off": "Up to 25% off",
+        "Deal": "Deal of the day",
+        "Brand": "Itel",
+        "image": "https://i.ibb.co/ScQX9hw/61d8nh-X80-WL-AC-UY218.jpg"
+    }
+]

@@ -15,17 +15,19 @@ const ListingDisplay = (props) => {
                     return (
                         // <div className='item' key={item._id}>
                         
-
-                        <div class="product electronics" key={item._id}>
-                            <img src={item.image} alt={item.product_name} style={{marginLeft: "24px"}}/>
-                            <h3>{item.content}</h3>
-                            {/* <p>{item.product_name}</p> */}
+                        
+                        
+                        
+                        <div class="product electronics" >
                             <Link to={`/details?productType_id=${item.id}`}>
-                                <p>{item.product_name}</p>
-                            </Link>
+                            <img src={item.image} alt={item.product_name} style={{marginLeft: "24px"}}/>
+                            <h3 style={{color: 'black'}}>{item.content}</h3>
+                            {/* <p>{item.product_name}</p> */}
+                                <p style={{color: '#007185'}}>{item.product_name}</p>
 
-                            <p>Rs.{item.price}</p>
+                            <p style={{color: 'black'}}>Rs.{item.price}</p>
                             <button>{item.Off}</button>
+                            </Link>
 
                             
                             {/* <div class="pagination">
@@ -63,6 +65,7 @@ const ListingDisplay = (props) => {
     return (
 
         <section class="product-listing">
+            {/* <Link to="/">   <button style={{marginLeft: '-65px', borderRadius: '12px', backgroundColor: 'rgb(19, 19, 49)', padding: '15px'}} >Home</button></Link> */}
             {renderData(props)}
         </section>
 

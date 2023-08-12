@@ -8,7 +8,7 @@ const Footer = () => {
 
         <>
 
-            <div className="top">
+            <div className="top" >
 
                 {/* <!-- <img src="logo.png"> --> */}
                 <h3><a href="#">Back To Top</a></h3>
@@ -41,11 +41,21 @@ const Footer = () => {
                     <p>COVID-19 and Amazon</p><br />
                     <p>Your Account</p><br />
                     <p>Returns Center</p><br />
-                    <p>100% Purchase Protection</p><br />
+                    <p>100% Purchase Protection</p><br/>
                     <p>Amazon App Download</p><br />
 
                 </div>
+
+                
+
+                
             </div>
+            <div className="text-center copyright" style={{marginTop: '-62px', marginLeft: '557px'}}><a href="https://github.com/swwapnil25"
+                target="_blank" rel="noreferrer"style={{color:"white", fontSize: '1rem'}}>&copy; swwapnil25 (Swapnil Thorat)</a></div>
+
+            
+
+
 
             
         </>

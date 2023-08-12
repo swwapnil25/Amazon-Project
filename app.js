@@ -33,6 +33,39 @@ app.get('/products', async (req, res) => {
     res.send(output);
 })
 
+app.get('/name', async (req, res) => {
+    let query = {};
+    let collection = "name"
+    let output = await getData(collection, query)
+    res.send(output);
+})
+
+// Get all Names 1,2,3,4...(Product_Conatiner)
+app.get('/name1', async (req, res) => {
+    let query = {};
+    let collection = "name1"
+    let output = await getData(collection, query)
+    res.send(output);
+})
+app.get('/name2', async (req, res) => {
+    let query = {};
+    let collection = "name2"
+    let output = await getData(collection, query)
+    res.send(output);
+})
+app.get('/name3', async (req, res) => {
+    let query = {};
+    let collection = "name3"
+    let output = await getData(collection, query)
+    res.send(output);
+})
+app.get('/name4', async (req, res) => {
+    let query = {};
+    let collection = "name4"
+    let output = await getData(collection, query)
+    res.send(output);
+})
+
 
 // product as per Selection (Category or Product)
 app.get('/quickSearch', async (req, res) => {
@@ -226,6 +259,53 @@ app.get('/details/:id', async(req,res)=>{
 })
 
 
+// Details Of the name 1,2,3,4....
+app.get('/details1/:id', async(req,res)=>{
+
+    let id = Number(req.params.id);
+    let query = {id:id}
+    let collection = "name1"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
+app.get('/details2/:id', async(req,res)=>{
+
+    let id = Number(req.params.id);
+    let query = {id:id}
+    let collection = "name2"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+app.get('/details3/:id', async(req,res)=>{
+
+    let id = Number(req.params.id);
+    let query = {id:id}
+    let collection = "name3"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+app.get('/details4/:id', async(req,res)=>{
+
+    let id = Number(req.params.id);
+    let query = {id:id}
+    let collection = "name4"
+    let output = await getData(collection,query)
+    res.send(output)
+})
+
+
+
+
+
+app.get('/producttype1/:id',async(req,res) => {
+    let id = Number(req.params.id);
+    let query = {productType_id:id};
+    let collection = "name1";
+    let output = await getData(collection,query);
+    res.send(output)
+})
+
 
 app.get('/producttype/:id',async(req,res) => {
     let id = Number(req.params.id);
@@ -310,4 +390,3 @@ app.listen(port, (err) => {
     if (err) throw err;
     console.log(`server is running on port ${port}`)
 })
-

@@ -1,0 +1,59 @@
+[
+    {
+        "productType_id": 1,
+        "producttType": "Attire",
+        "product_name": "infloura",
+        "content": "Women’s Zari and Foil Printed Net..",
+        "price": 1999,
+        "Off": "Up to 30% off",
+        "Deal": "Deal of the day",
+        "Brand": "infloura",
+        "image": "https://i.ibb.co/6gcrynS/81-Cev2-Ax0-GL-AC-UL400.jpg"
+    },
+    {
+        "productType_id": 2,
+        "producttType": "Attire",
+        "product_name": "THE ARCHER",
+        "content": "Men's Regular Fit Vest",
+        "price": 270,
+        "Off": "Up to 36% off",
+        "Deal": "Deal of the day",
+        "Brand": "THE ARCHER",
+        "image": "https://i.ibb.co/N3rdyBg/61-Hv7po-EWTL-AC-UL400.jpg"
+        
+    },
+    {
+        "productType_id": 3,
+        "producttType": "Attire",
+        "product_name": "Alan Jones",
+        "content": "High Waist Gym, Yoga, Active..",
+        "price": 579,
+        "Off": "Up to 64% off",
+        "Deal": "Deal of the day",
+        "Brand": "Alan Jones",
+        "image": "https://i.ibb.co/tXDX6Sf/41x4if-IB6-ML-AC-UL400.jpg"
+    },
+    {
+        "productType_id": 4,
+        "producttType": "Attire",
+        "product_name": "Caprese CHA",
+        "content": "Reversible Pu-Leather Formal Belt..",
+        "price": 270,
+        "Off": "Up to 80% off",
+        "Deal": "Deal of the day",
+        "Brand": "CREATURE",
+        "image": "https://i.ibb.co/mXDLYpK/71f9x1-YGVu-L-AC-UL400.jpg"
+    },
+    {
+        "productType_id": 5,
+        "producttType": "Attire",
+        "product_name": "GRITSTONES",
+        "content": "Men Cotton Blend Plain Summer Shirt..",
+        "price": 376,
+        "Off": "Up to 40% off",
+        "Deal": "Deal of the day",
+        "Brand": "GRITSTONES",
+        "image": "https://i.ibb.co/Ms94qTS/519cw-IVryl-L-AC-UL400.jpg"
+    }
+    
+]

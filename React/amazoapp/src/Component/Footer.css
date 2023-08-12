@@ -234,7 +234,7 @@
     justify-content: center;
     background-color: var(--secondary-color);
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     cursor: pointer;
     margin-top: 26px;
@@ -249,7 +249,7 @@
     justify-content: space-around;
     color: white;
     background-color: var(--sixth-color);
-    padding: 44px;
+    padding: 28px;
     }
     .list{
     cursor: pointer;

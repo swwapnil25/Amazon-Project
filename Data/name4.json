@@ -1,0 +1,59 @@
+[
+    {
+        "productType_id": 1,
+        "producttType": "Gaming Category",
+        "product_name": "Gaming Mouse",
+        "content": "AmazonBasics Optical USB Gaming Mouse..",
+        "price": 379,
+        "Off": "Up to 30% off",
+        "Deal": "Deal of the day",
+        "Brand": "Amazon basics",
+        "image": "https://i.ibb.co/642kbb5/61022qav-Kb-L-AC-UY218.jpg"
+    },
+    {
+        "productType_id": 2,
+        "producttType": "Gaming Category",
+        "product_name": "SpinBot",
+        "content": "SpinBot BattleBudz H1 Over-The-..",
+        "price": 1199,
+        "Off": "Up to 70% off",
+        "Deal": "Deal of the day",
+        "Brand": "SpinBot",
+        "image": "https://i.ibb.co/KD0cKHL/818-YJwl-H2-BL-AC-UY218.jpg"
+        
+    },
+    {
+        "productType_id": 3,
+        "producttType": "Gaming Category",
+        "product_name": "Sony PS5",
+        "content": "Sony PS5 PlayStation Console..",
+        "price": 47490,
+        "Off": "Up to 14% off",
+        "Deal": "Deal of the day",
+        "Brand": "Sony",
+        "image": "https://i.ibb.co/GpRfrsH/51m-WHXY8hy-L-AC-UY218.jpg"
+    },
+    {
+        "productType_id": 4,
+        "producttType": "Gaming Category",
+        "product_name": "Gaming Controller",
+        "content": "Ambrane Wireless Gaming Controller..",
+        "price": 1899,
+        "Off": "Up to 40% off",
+        "Deal": "Deal of the day",
+        "Brand": "Ambrane",
+        "image": "https://i.ibb.co/VjV2hwP/711-Eq-R0-PGGL-AC-UY218.jpg"
+    },
+    {
+        "productType_id": 5,
+        "producttType": "Gaming Category",
+        "product_name": "Audio Maverick ",
+        "content": "Boult Audio Maverick Truly Wireless..",
+        "price": 1499,
+        "Off": "Up to 33% off",
+        "Deal": "Deal of the day",
+        "Brand": "Boult Audio",
+        "image": "https://i.ibb.co/Rj4NW51/71c-BZJsl-EL-AC-UY218.jpg"
+    }
+    
+]
