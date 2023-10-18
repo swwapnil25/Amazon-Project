@@ -1,19 +1,22 @@
 import React from "react";
 import './Footer.css';
+import { useDarkMode } from "./Home/DarkModeContext";
 
 
 const Footer = () => {
+
+    const { isDarkMode } = useDarkMode();
 
     return (
 
         <>
 
-            <div className="top" >
+            <div className={`top ${isDarkMode ? 'dark-theme' : ''}`} >
 
                 {/* <!-- <img src="logo.png"> --> */}
                 <h3><a href="#">Back To Top</a></h3>
             </div>
-            <div className="footer">
+            <div className={`footer ${isDarkMode ? 'dark-theme' : ''}`}>
                 <div className="list">
                     <h2>Get to Know Us</h2><br />
                     <p>About us</p><br />

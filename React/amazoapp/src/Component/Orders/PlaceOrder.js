@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './PlaceOrder.css';
 import { useParams } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
+import Root from '../Home/Root';
+import { useDarkMode } from '../Home/DarkModeContext';
 
 const url = "https://amazonapi-r8s2.onrender.com/placeorder";
 
@@ -20,7 +22,7 @@ const PlaceOrder = () => {
     address: "",
     payment: ""
   };
-
+  const { isDarkMode } = useDarkMode();
   const [values, setValues] = useState(initialValues);
   const [formError, setFormError] = useState(false);
 
@@ -31,6 +33,13 @@ const PlaceOrder = () => {
       [name]: value,
     });
   };
+
+  useEffect(() => {
+    const rootElement = document.getElementById("root");
+    if (rootElement) {
+      rootElement.style.backgroundColor = isDarkMode ? "rgb(37 36 36)" : "#e0d7d7";
+    }
+  }, [isDarkMode]);
 
   const checkout = () => {
     if (values.name && values.email && values.phone && values.address && values.payment) {
@@ -52,7 +61,7 @@ const PlaceOrder = () => {
   return (
     <>
       <Header />
-      <div className="container11">
+      <div className={`container11 ${isDarkMode ? 'dark-theme' : ''}`}>
     {formError && <p className="error-message" style={{textAlign: "center",fontSize: "26px", marginTop: "-30px", color: 'red'}}>Please fill out all fields before proceeding..</p>}
     {/* "#534040" */}
         <h1 className="head1" style={{fontSize: "30px",marginTop: "3px"}}>Your Order {params.product_name}</h1>

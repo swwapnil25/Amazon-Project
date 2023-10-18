@@ -39,6 +39,7 @@
     }
     .card-product{
         background-color: var(--fourth-color);
+        color: var(--fifth-color);
         display: flex;
         flex-direction: column;
         justify-content: space-between;

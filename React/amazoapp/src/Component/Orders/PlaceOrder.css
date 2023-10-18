@@ -1,4 +1,18 @@
 /* PlaceOrder.module.css */
+
+
+:root{
+
+  --first-color: #fff;
+  --second-color: black;
+
+}
+.dark-theme{
+
+  --first-color: #201d1d;
+  --second-color: #fff;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,7 +24,8 @@ body {
   max-width: 800px;
   margin: 26px auto;
   padding: 42px;
-  background-color: #fff;
+  color: var(--second-color);
+  background-color: var(--first-color);
   border: 2px solid #ccc;
   border-radius: 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

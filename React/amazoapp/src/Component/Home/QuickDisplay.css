@@ -343,7 +343,7 @@
     justify-content: center;
     transform: translateX(0%);
     transition: transform 1s;
-    color: var( --fifth-color);
+    /* color: var( --fifth-color); */
     }
     .todayDeals_product_image{
     height: 200px;
@@ -363,7 +363,7 @@
     .today_deals_product_item p{
     justify-self: flex-end;
     margin-top: 14px;
-    color: black;
+    color: var(--fifth-color);
     text-align: center;
     }
     .discount_Contaienr{

@@ -2,16 +2,16 @@
 
 
 
-:root{
+:root {
 
-    --first-color: #f0f0f7;
-    --second-color: black;
+    --tenth-color: #f2e8e8;
+    --hundred-color: black;
     
     }
     .dark-theme{
         
-        --first-color: #201d1d;
-        --second-color: #fff;
+        --tenth-color: #201d1d;
+        --hundred-color: #fff;
     
     }
 
@@ -29,18 +29,9 @@
     box-sizing: border-box;
   }
   
-  header {
-    background: #333;
-    color: var(--third-color);
-    padding: 20px;
-    text-align: center;
-  }
   
-  nav ul {
-    list-style-type: none;
-    background: #f4f4f4;
-    padding: 10px;
-  }
+ 
+ 
   
   nav ul li {
     display: inline;
@@ -74,7 +65,15 @@
       margin-top: -546px;
   }
   
-  
+  .product {
+    width: 282px;
+    margin: 14px;
+    padding: 20px;
+    background-color: var(--tenth-color);
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #fff;
+  }
   
   .product img {
     width: 200px;
@@ -127,16 +126,6 @@
       margin-left: 15px;
   }
   
-  .filter-options {
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-      background-color: var(--first-color);
-      color: var(--second-color);
-      padding-left: 30px;
-      margin-bottom: 10px;
-      min-width: 250px;
-      height: 525px;
-      border: 1px solid #fff;
-  }
   
   .filter-heading {
       font-family: Poppins;
@@ -307,80 +296,8 @@
       margin: 2px;
   }
   
-  @media only screen and (max-width: 600px) {
-      .Item {
-          width: 160%;
-          height: 200px;
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          background-color: #ffffff;
-          margin-bottom: 15px;
-      }
-      .filter-options {
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          background-color: #ffffff;
-          padding-left: 30px;
-          margin-bottom: 10px;
-          min-width: 450px;
-      }
-      .big {
-          display: block;
-          width: 68%;
-      }
-      .small {
-          display: block;
-          width: 28%;
-      }
-      .big-item {
-          display: inline-block;
-          width: 68%;
-      }
-      .small-item {
-          display: inline-block;
-          width: 28%;
-      }
-      .rest-name {
-          font-family: Poppins;
-          font-size: 30px;
-          font-weight: 600;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.53;
-          letter-spacing: normal;
-          text-align: left;
-          color: #192f60;
-          padding-left: 35px;
-      }
-      .rest-location {
-          font-family: Poppins;
-          font-size: 16px;
-          font-weight: 500;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.88;
-          letter-spacing: normal;
-          text-align: left;
-          color: #192f60;
-          padding-left: 35px;
-      }
-      .rest-address {
-          font-family: Poppins;
-          font-size: 16px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.88;
-          letter-spacing: normal;
-          text-align: left;
-          color: #636f88;
-          padding-left: 35px;
-      }
-      .pagination {
-          display: inline-block;
-          margin-top: 25px;
-          width: 380px;
-          margin-left: 50px;
-      }
-  }
+ 
+  
   
   
   

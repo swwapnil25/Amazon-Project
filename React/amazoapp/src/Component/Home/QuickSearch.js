@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './QuickSearch.css';
-import QuickDisplay from './QuickDisplay'
+import QuickDisplay from './QuickDisplay';
+import { useDarkMode } from "./DarkModeContext";
 
 
 const base_url = "https://amazonapi-r8s2.onrender.com";
@@ -8,7 +9,7 @@ const base_url = "https://amazonapi-r8s2.onrender.com";
 
 const QuickSearch = () => {
 
-
+    const { isDarkMode } = useDarkMode();
 	const [producttype, setProductType] = useState();
 
 	useEffect(() => {
@@ -27,7 +28,7 @@ const QuickSearch = () => {
 
 		<>
 
-			<section className="today_deals_container" style={{ marginTop: "-350px" }}>
+<section className={`today_deals_container ${isDarkMode ? 'dark-theme' : ''}`} style={{ marginTop: "-350px"}}>
 				<div className="today_deals_heading">
 					<h1>Today's Deals</h1>
 					<p><a href="#">See all deals</a></p>

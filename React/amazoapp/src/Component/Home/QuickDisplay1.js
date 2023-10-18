@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useDarkMode } from './DarkModeContext';
 import { Link } from 'react-router-dom';
+
 
 const QuickDisplay = ({ baseUrl }) => {
   const [products, setProducts] = useState([]);
+  const { isDarkMode } = useDarkMode();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +22,7 @@ const QuickDisplay = ({ baseUrl }) => {
   }, [baseUrl]);
 
   return (
-    <div className="today_deals_product_list">
+    <div className={`today_deals_product_list ${isDarkMode ? 'dark-theme' : ''}`}>
       {products.map((item) => (
         <Link key={item.productType_id} to={`/details?productType_id=${item.id}`}>
           <div className="today_deals_product_item">
@@ -28,8 +31,20 @@ const QuickDisplay = ({ baseUrl }) => {
               <a href="#">{item.Off}</a>
               <a href="#">{item.Deal}</a>
             </div>
-            <p>{item.content}</p>
-            
+            <p
+                            style={{
+                                color: isDarkMode ? 'white' : 'var(--fifth-color)',
+                            }}
+                            onMouseOver={(e) =>
+                                (e.target.style.color = isDarkMode
+                                    ? 'rgb(213 117 10 / 95%)'
+                                    : 'rgb(213 117 10 / 95%)') // Set the same color for both dark and light modes on hover
+                            }
+                            onMouseOut={(e) => (e.target.style.color = isDarkMode ? 'white' : 'var(--fifth-color)')}
+                        >
+                            {item.content}
+                        </p>
+            {/* rgb(160 121 121) */}
           </div>
         </Link>
       ))}

@@ -4,17 +4,20 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 import Header from '../Header';
+import { useDarkMode } from '../Home/DarkModeContext';
+import Root from '../Home/Root';
 
 const base_url = "https://amazonapi-r8s2.onrender.com";
 
 const DetailDisplay = () => {
+  const { isDarkMode } = useDarkMode();
   let navigate = useNavigate();
   let [SearchParams] = useSearchParams();
   let [prodDetails, setProdDetails] = useState();
   let [productid] = useState(sessionStorage.getItem('productid'));
-
+  
   let productType_id = SearchParams.getAll('productType_id');
-
+  
   const fetchData = async () => {
     try {
       const [details, details1, details2, details3, details4] = await Promise.all([
@@ -44,9 +47,19 @@ const DetailDisplay = () => {
     fetchData();
   }, []);
 
+
+  useEffect(() => {
+    const rootElement = document.getElementById("root");
+    if (rootElement) {
+      rootElement.style.backgroundColor = isDarkMode ? "rgb(37 36 36)" : "#e0d7d7";
+    }
+  }, [isDarkMode]);
+
   const proceed = () => {
     navigate(`/placeOrder/${prodDetails.content}`);
   };
+
+
 
 
     const renderDetails = () => {
@@ -55,7 +68,7 @@ const DetailDisplay = () => {
             return (
                 <>
                      
-                    <div class="product-div">
+                    <div class={`product-div  ${isDarkMode ? 'dark-theme' : ''}` }>
                         <div class="product-div-left">
                         <div className="img-container" style={{ width: '300px', height: '267px' }}>
                         <img src={prodDetails.image} alt={prodDetails.content} style={{ objectFit: 'contain', width: '165%', height: '100%' }} />
@@ -116,7 +129,7 @@ const DetailDisplay = () => {
 
         <>
         <Header/>
-            <div class="main-wrapper">
+            <div class={`main-wrapper  ${isDarkMode ? 'dark-theme' : ''}` }>
                 <div class="container" style={{ marginBottom: '-890px' }}>
                     {renderDetails()}
 

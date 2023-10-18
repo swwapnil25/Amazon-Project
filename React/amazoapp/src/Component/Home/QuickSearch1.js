@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './QuickSearch.css';
 import QuickDisplay from './QuickDisplay';
 import QuickDisplay1 from './QuickDisplay1';
+import { useDarkMode } from "./DarkModeContext";
 
 // const base_url1 = "https://amazonapi-r8s2.onrender.com/name";
 const base_url2 = "https://amazonapi-r8s2.onrender.com/name1";
@@ -11,6 +12,7 @@ const base_url5 = "https://amazonapi-r8s2.onrender.com/name4";
 
 const QuickSearch = () => {
 //   const [productType1, setProductType1] = useState([]);
+ const { isDarkMode } = useDarkMode();
   const [productType2, setProductType2] = useState([]);
   const [productType3, setProductType3] = useState([]);
   const [productType4, setProductType4] = useState([]);
@@ -44,7 +46,7 @@ const QuickSearch = () => {
     <>
      
 
-      <section className="today_deals_container1">
+      <section className={`today_deals_container1 ${isDarkMode ? 'dark-theme' : ''}`}>
         <div className="today_deals_heading">
           <h1>Attractive Deals</h1>
           <p><a href="#">See all deals</a></p>
@@ -52,7 +54,7 @@ const QuickSearch = () => {
         <QuickDisplay1 productData={productType2} baseUrl={base_url2} />
       </section>
 
-      <section className="today_deals_container1">
+      <section className={`today_deals_container1 ${isDarkMode ? 'dark-theme' : ''}`}>
         <div className="today_deals_heading">
           <h1>Items You May Like</h1>
           <p><a href="#">See all deals</a></p>
@@ -60,7 +62,7 @@ const QuickSearch = () => {
         <QuickDisplay1 productData={productType3} baseUrl={base_url3} />
       </section>
 
-      <section className="today_deals_container1">
+      <section className={`today_deals_container1 ${isDarkMode ? 'dark-theme' : ''}`}>
         <div className="today_deals_heading">
           <h1>Attire</h1>
           <p><a href="#">See all deals</a></p>
@@ -68,7 +70,7 @@ const QuickSearch = () => {
         <QuickDisplay1 productData={productType4} baseUrl={base_url4} />
       </section>
 
-      <section className="today_deals_container1">
+      <section className={`today_deals_container1 ${isDarkMode ? 'dark-theme' : ''}`}>
         <div className="today_deals_heading">
           <h1>Gaming Category</h1>
           <p><a href="#">See all deals</a></p>

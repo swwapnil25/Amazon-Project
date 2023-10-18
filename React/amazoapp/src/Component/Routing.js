@@ -9,7 +9,11 @@ import PlaceOrder from './Orders/PlaceOrder';
 import ViewOrder from './Orders/ViewOrder';
 import Login from './login/loginComponent';
 import Register from './login/registerComponent';
-import CouponBanner from './Home/amazon';
+import CouponBanner from './Home/Coupon';
+// import WeatherComponent from './WeatherComponent'; // Update the path accordingly
+import { DarkModeProvider } from './Home/DarkModeContext';
+import Header from './Header';
+import Root from './Home/Root';
 
 
 
@@ -20,9 +24,11 @@ const Routing = () =>{
 
     return(
         <div>
+            <DarkModeProvider>  
             <BrowserRouter>
             
             <Routes>
+                
                 <Route path="/" element={<Main/>}/>
                 <Route index element={<Home/>}/>
                 <Route path="home" element={<Home/>}/>
@@ -33,8 +39,11 @@ const Routing = () =>{
                 <Route path="login" element={<Login/>}/>
                 <Route path="register" element={<Register/>}/>
                 <Route path="amazon" element={<CouponBanner/>}/>
+                {/* <Route path="weather" element={<WeatherComponent />}/> */}
                 {/* <Route path="Full" element={<Full/>}/> */}
-
+                <Route path="/" component={Header} />
+                <Route path="root" element={<Root />} />
+                
                 
             
                 <Route/>
@@ -45,6 +54,7 @@ const Routing = () =>{
             <Footer/>
             
             </BrowserRouter>
+                </DarkModeProvider>
         </div>
     )
 }

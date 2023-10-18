@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import './Header.css';
 import { Link } from "react-router-dom";
+import { useDarkMode } from "./Home/DarkModeContext";
+
 // import Styles from './Header.module.css'
 
 // import { IconName } from "react-icons/fa6";
@@ -12,6 +14,12 @@ export const Header = () => {
 
     const [input, setInput] = useState("");
     const [useData, setuserData] = useState();
+    // const [isDarkMode, setIsDarkMode] = useState(false);
+    const { isDarkMode, toggleDarkMode } = useDarkMode();
+
+    // const toggleDarkMode = () => {
+    //     setIsDarkMode(!isDarkMode);
+    //   };
 
 
     // const fetchData = (value) => {
@@ -42,8 +50,7 @@ export const Header = () => {
 
            
             <div id="main">
-                <nav className="fnav">
-
+            <nav className={`fnav ${isDarkMode ? 'dark-theme' : ''}`}>
                     <img src="https://i.ibb.co/Z1Rt0CC/amazon.png" />
                     <div className="nav">
 
@@ -85,7 +92,7 @@ export const Header = () => {
                 </nav>
             </div>
 
-            <nav className="snav">
+            <nav className={`snav ${isDarkMode ? 'dark-theme' : ''}`}>
                 <i className="fa-solid fa-bars"></i>
                 <p>All</p>
                 <p>Fresh</p>
@@ -99,7 +106,12 @@ export const Header = () => {
                 <div className="head">
                     <h4>Shopping made sasy | Download the app</h4>
                 </div>
-                <img src="https://i.ibb.co/D9kVQzw/moon.png" id="icon" />
+                <img
+        src={isDarkMode ? 'https://i.ibb.co/Zgwhyw2/sun.png' : 'https://i.ibb.co/D9kVQzw/moon.png'}
+        alt="Mode Icon"
+        id="icon"
+        onClick={toggleDarkMode}
+      />
             </nav>
 
 

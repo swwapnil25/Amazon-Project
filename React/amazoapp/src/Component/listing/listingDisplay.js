@@ -1,12 +1,15 @@
 import React from 'react';
+import './listingDisplay.css';
+import { useDarkMode } from '../Home/DarkModeContext';
 import { Link } from 'react-router-dom';
 
 
 
-
+ 
 
 const ListingDisplay = (props) => {
-
+    const styles = { color: 'var(--hundred-color)'};
+    const { isDarkMode } = useDarkMode();
     const renderData = ({ listData }) => {
 
         if (listData) {
@@ -16,16 +19,18 @@ const ListingDisplay = (props) => {
                         // <div className='item' key={item._id}>
                         
                         
+                       
                         
                         
-                        <div class="product electronics" >
+                        
+                        <div class="product electronics"  >
                             <Link to={`/details?productType_id=${item.id}`}>
                             <img src={item.image} alt={item.product_name} style={{marginLeft: "24px"}}/>
-                            <h3 style={{color: 'black'}}>{item.content}</h3>
+                            <h3 style={styles} >{item.content}</h3>
                             {/* <p>{item.product_name}</p> */}
                                 <p style={{color: '#007185'}}>{item.product_name}</p>
 
-                            <p style={{color: 'black'}}>Rs.{item.price}</p>
+                                <p style={styles}>Rs.{item.price}</p>
                             <button>{item.Off}</button>
                             </Link>
 
@@ -64,7 +69,7 @@ const ListingDisplay = (props) => {
 
     return (
 
-        <section class="product-listing">
+        <section class={`product-listing ${isDarkMode ? 'dark-theme' : ''}` }>
             {/* <Link to="/">   <button style={{marginLeft: '-65px', borderRadius: '12px', backgroundColor: 'rgb(19, 19, 49)', padding: '15px'}} >Home</button></Link> */}
             {renderData(props)}
         </section>

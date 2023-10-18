@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import './DisplayOrder.css';
 import { Link } from "react-router-dom";
-
+import { useDarkMode } from '../Home/DarkModeContext';
 
 
 
 const DisplayOrders = (props) => {
+
+    const { isDarkMode } = useDarkMode();
+
 
     const renderData = ({ orderData }) => {
         if (orderData) {
@@ -20,7 +23,7 @@ const DisplayOrders = (props) => {
                     //     <td>{item.phone}</td>
                     // </tr>
 
-                <tbody>
+                    <tbody key={item.id} className={isDarkMode ? 'dark-theme' : ''}>
                     <tr key={item.id}>
                         <td> {item.id}</td>
                         <td>{item.product_name}</td>
@@ -41,6 +44,14 @@ const DisplayOrders = (props) => {
             })
         }
     }
+
+
+    useEffect(() => {
+        const rootElement = document.getElementById("root");
+        if (rootElement) {
+          rootElement.style.backgroundColor = isDarkMode ? "rgb(37 36 36)" : "#e0d7d7";
+        }
+      }, [isDarkMode]);
 
     return (
         <main class="table" style={{marginLeft: '112px',marginBlock: '6px'}}>

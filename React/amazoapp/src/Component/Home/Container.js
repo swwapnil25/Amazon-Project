@@ -1,19 +1,22 @@
 import React from "react";
 import './Container.css';
+import { useDarkMode } from "./DarkModeContext";
 
 
 
 const Container = () =>{
 
+    const { isDarkMode } = useDarkMode();
+
     return(
 
         <>
         
-           <div className="main">
+           <div className={`main ${isDarkMode ? 'dark-theme' : ''}`}>
 				<img src="https://i.ibb.co/7R35KbV/Background.png "/>
 			</div>
 			<div class="card-product-container container" style={{maxWidth: "1300px", marginTop: "26px"}}>
-            <div class="card-product">
+            <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Up to 60% off | Styles for Men</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
@@ -39,7 +42,7 @@ const Container = () =>{
                 </div>
                 <button class="card-product-btn">see more</button>
             </div>
-            <div class="card-product">
+            <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Redefine your living room</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
@@ -65,7 +68,7 @@ const Container = () =>{
                 </div>
                 <button class="card-product-btn">see more</button>
             </div>
-            <div class="card-product">
+            <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Great Freedom Sale | Brands in focus</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
@@ -91,7 +94,7 @@ const Container = () =>{
                 </div>
                 <button class="card-product-btn">see more</button>
             </div>
-            <div class="card-product">
+            <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Automotive essentials | Up to 60% off</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
@@ -120,7 +123,7 @@ const Container = () =>{
         </div>
 
         <div class="card-product-container container productBackgraound" style={{maxWidth: "1300px",marginTop: "49px"}}>
-            <div class="card-product">
+        <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Top rated, premium quality | Amazon Brands</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
@@ -146,7 +149,7 @@ const Container = () =>{
                 </div>
                 <button class="card-product-btn">see more</button>
             </div>
-            <div class="card-product">
+            <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Up to 60% off | Fashion as unique as you are</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
@@ -172,7 +175,7 @@ const Container = () =>{
                 </div>
                 <button class="card-product-btn">see more</button>
             </div>
-            <div class="card-product">
+            <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Up to 60% off | Top picks</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
@@ -198,7 +201,7 @@ const Container = () =>{
                 </div>
                 <button class="card-product-btn">see more</button>
             </div>
-            <div class="card-product">
+            <div class={`card-product ${isDarkMode ? 'dark-theme' : ''}` }>
                 <h2>Electronics devices for home office</h2>
                 <div class="card-product-nested-card">
                     <div class="card-nested">
