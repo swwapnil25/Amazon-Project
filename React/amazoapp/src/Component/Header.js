@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Header.css';
+import axios from 'axios';
 import { Link } from "react-router-dom";
 import { useDarkMode } from "./Home/DarkModeContext";
 
@@ -16,6 +17,41 @@ export const Header = () => {
     const [useData, setuserData] = useState();
     // const [isDarkMode, setIsDarkMode] = useState(false);
     const { isDarkMode, toggleDarkMode } = useDarkMode();
+    const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
+  const [weatherData, setWeatherData] = useState(null);
+    
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setLatitude(position.coords.latitude);
+          setLongitude(position.coords.longitude);
+
+          const API_KEY = 'e16a49bc212c2317cde408109d67c894';
+          const url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${API_KEY}&units=metric`;
+
+          axios
+            .get(url)
+            .then((response) => {
+              setWeatherData(response.data.main.temp);
+            })
+            .catch((error) => {
+              console.error('Error fetching weather data:', error);
+            });
+        },
+        (error) => {
+          console.error('Error getting user location:', error);
+        }
+      );
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  }, []);
+
+    
+    
+   
 
     // const toggleDarkMode = () => {
     //     setIsDarkMode(!isDarkMode);
@@ -84,7 +120,7 @@ export const Header = () => {
                     <hr />
                     <div id="weather-box">
                         <p id="out"></p>
-                        <p id="weather"></p>
+                        <p id="weather">{weatherData}°C</p>
                         <div id="weather-icon">
                             <img src="https://i.ibb.co/Hzf6zcM/01d.png" alt="weather-icon" />
                         </div>
