@@ -76,5 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-https://github.com/swwapnil25/Amazon-Project/assets/85275673/4f9c9792-265f-4e3f-b97f-d302f2f5a037
+
+
+https://github.com/swwapnil25/Amazon-Project/assets/85275673/f420a2d9-bba5-4f24-8531-0f32147a0ea4
 
