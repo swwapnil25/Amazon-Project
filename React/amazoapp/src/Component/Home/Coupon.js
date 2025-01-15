@@ -47,7 +47,7 @@ const CouponBanner = () => {
         ></div>
         <div id="coupon" style={{ marginTop: "12%" }}>
           <img
-            src="https://i.ibb.co/Rb40q3T/Amazon-Coupon.webp"
+            src="https://i.ibb.co/c1V3xtM/Amazon-Coupon.webp"
             alt="Coupon"
           />
           <button
