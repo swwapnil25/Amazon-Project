@@ -87,7 +87,7 @@ export const Header = () => {
            
             <div id="main">
             <nav className={`fnav ${isDarkMode ? 'dark-theme' : ''}`}>
-                    <img src="https://i.ibb.co/Z1Rt0CC/amazon.png" />
+                    <img src="https://i.ibb.co/ZYcfBML/amazon.png" />
                     <div className="nav">
 
                         <div className="loca">
