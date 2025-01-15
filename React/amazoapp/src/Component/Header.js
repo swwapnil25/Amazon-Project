@@ -143,7 +143,7 @@ export const Header = () => {
                     <h4>Shopping made sasy | Download the app</h4>
                 </div>
                 <img
-        src={isDarkMode ? 'https://i.ibb.co/Zgwhyw2/sun.png' : 'https://i.ibb.co/D9kVQzw/moon.png'}
+        src={isDarkMode ? 'https://i.ibb.co/hH6RZFN/sun.png' : 'https://i.ibb.co/cLwf7Jz/moon.png'}
         alt="Mode Icon"
         id="icon"
         onClick={toggleDarkMode}
